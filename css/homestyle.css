@@ -1,0 +1,212 @@
+/* Nav Bar
+-------------------------------------------------------------------------------------------- */
+
+#logo {
+    height: calc(100vh - 60px);
+    max-width: calc(((100vw - 120px - 24px * 11) / 12) * 6 + 24px * 5);
+    transition: 2s;
+}
+
+#changeNav {
+    height: 0px;
+    overflow: visible;
+    transition: 1s;
+}
+
+#scrollButton1 {
+    opacity: 0%;
+    transition: 1s;
+}
+
+#scrollButton2 {
+    opacity: 0%;
+    transition: 1s;
+}
+
+#scrollButton3 {
+    opacity: 0%;
+    transition: 1s;
+}
+
+/* Header
+-------------------------------------------------------------------------------------------- */
+
+header {
+    height: auto;
+    overflow: hidden;
+}
+
+header .container {
+    height: auto;
+    overflow: hidden;
+}
+
+header .column-6 {
+    align-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: calc(100vh - 60px);
+    margin-bottom: 30px;
+    margin-left: calc(((100vw - 120px - 24px * 11) / 12) * 6 + 24px * 6);
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+header h1 {
+    margin-bottom: 60px;
+}
+
+/* Highlighted Works
+-------------------------------------------------------------------------------------------- */
+
+.highlight {
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.highlight .container {
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.thumbnail {
+    align-content: space-between;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+.transition {
+    height: 50px;
+    width: 100vw;
+}
+
+.banner {
+    margin-top: 250px;
+}
+
+.first-thumbnail {
+    background-image: url("../assets/1. Home/first-vedette.jpg");
+}
+
+.second-thumbnail {
+    background-image: url("../assets/1. Home/second-vedette.jpg");
+}
+
+.third-thumbnail {
+    background-image: url("../assets/1. Home/third-vedette.jpg");
+}
+
+.fourth-thumbnail {
+    background-image: url("../assets/1. Home/fourth-vedette.png");
+}
+
+.view-all {
+    height: auto;
+    margin-top: 250px;
+    overflow: hidden;
+}
+
+.view-all .container {
+    height: auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.view-all a {
+    animation: none;
+    filter: none;
+}
+
+.view-all a:hover {
+    animation: none;
+    filter: none;
+}
+
+.arrow {
+    margin-left: 0px;
+    transition: 1s;
+}
+
+.highlight .column-2:hover > .arrow {
+    margin-left: calc(((100vw - 120px - 24px * 11) / 12) * 1 + 24px * 0);
+    transition: 1s;
+}
+
+.highlight a {
+    animation: none;
+    filter: none;
+}
+
+.highlight a:hover {
+    animation: none;
+    filter: none;
+}
+
+/* Responsive — Tablet
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    header h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    header h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+/* Responsive — Phone
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+    /* Header
+-------------------------------------------------------------------------------------------- */
+
+    header {
+        height: calc(100vh - 32px);
+    }
+
+    header h2 {
+        margin-top: 240px;
+    }
+
+    header h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    /* Highlighted Works
+-------------------------------------------------------------------------------------------- */
+
+    .thumbnail {
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .transition {
+        height: 40px;
+        width: 100vw;
+    }
+
+    .view-all {
+        height: auto;
+        margin-bottom: 120px;
+        margin-top: 120px;
+        overflow: hidden;
+    }
+}

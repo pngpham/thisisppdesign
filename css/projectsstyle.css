@@ -1,0 +1,64 @@
+/* Header
+-------------------------------------------------------------------------------------------- */
+
+header {
+    height: auto;
+    overflow: hidden;
+}
+
+header .container {
+    height: auto;
+    margin-bottom: 150px;
+    margin-top: 230px;
+    overflow: hidden;
+}
+
+/* Projects
+-------------------------------------------------------------------------------------------- */
+
+.projects {
+    height: auto;
+    margin-bottom: 230px;
+    overflow: hidden;
+}
+
+.projects .container {
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.projects .project {
+    height: auto;
+    overflow: hidden;
+}
+
+.projects a {
+    animation: none;
+    filter: none;
+}
+
+.projects a:hover {
+    animation: none;
+    filter: none;
+}
+
+.projects p {
+    margin-top: 20px;
+}
+
+/* Responsive — Mobile
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+
+    header .container {
+        height: auto;
+        margin-bottom: 150px;
+        margin-top: 360px;
+        overflow: hidden;
+    }
+    
+}

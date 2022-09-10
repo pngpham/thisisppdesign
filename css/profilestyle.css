@@ -1,0 +1,254 @@
+/* Header
+-------------------------------------------------------------------------------------------- */
+
+header {
+    align-items: flex-start;
+    display: flex;
+    height: auto;
+}
+
+header .sticky {
+    margin-bottom: 120px;
+    margin-left: 60px;
+    margin-right: 24px;
+    margin-top: 220px;
+    position: sticky;
+    top: 220px;
+}
+
+header .scrollable {
+    margin-top: 220px;
+}
+
+header p {
+    margin-bottom: 120px;
+    margin-top: 150px;
+}
+
+/* Divider
+-------------------------------------------------------------------------------------------- */
+
+.divider {
+    background-image: linear-gradient(to bottom, rgba(255, 231, 0, 0), rgba(255, 231, 0, 1), rgba(255, 231, 0, 1), rgba(255, 231, 0, 1), rgba(255, 231, 0, 0));
+    height: auto;
+    overflow: hidden;    
+    z-index: 1;
+}
+
+.divider .container {
+    height: auto;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+/* Fields
+-------------------------------------------------------------------------------------------- */
+
+.fields {
+    height: auto;
+    overflow: hidden;
+}
+
+.fields .container {
+    height: auto;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+/* Contact
+-------------------------------------------------------------------------------------------- */
+
+.contact {
+    height: auto;
+    overflow: hidden;
+}
+
+.contact .container {
+    height: auto;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+/* Gift
+-------------------------------------------------------------------------------------------- */
+
+.gift {
+    height: auto;
+    overflow: hidden;
+}
+
+.gift .container {
+    height: auto;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+.gift img {
+    margin-top: 60px;
+}
+
+/* Signature
+-------------------------------------------------------------------------------------------- */
+
+.signature {
+    height: auto;
+    overflow: hidden;
+}
+
+.signature .container {
+    height: auto;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+.signature .column-3 {
+    margin-left: calc(((100vw - 120px - 24px * 11) / 12) * 8 + 24px * 8);
+}
+
+
+
+/* Responsive — Tablet
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+    .contact-info {
+        width: calc(((100vw - 120px - 24px * 11) / 12) * 8 + 24px * 7);
+    }
+
+    .outer-contact-info {
+        margin-top: 60px;
+    }
+
+}
+
+
+
+/* Responsive — Phone
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .mobile .small-text {
+        margin-bottom: 10px;
+    }
+
+/* Header
+-------------------------------------------------------------------------------------------- */
+
+    header {
+        display: block;
+        height: auto;
+    }
+
+   .mobile-sticky {
+        background-color: #F9F7F6;
+        padding-left: 16px;
+        padding-top: 240px;
+        position: sticky;
+        top: 0px;
+    }
+    
+    .mobile-scrollable {
+        margin-left: 16px;
+        padding-bottom: 150px;
+    }
+
+/* Divider
+-------------------------------------------------------------------------------------------- */
+
+    .mobile-divider {
+        background-image: linear-gradient(to bottom, rgba(255, 231, 0, 0), rgba(255, 231, 0, 1), rgba(255, 231, 0, 1), rgba(255, 231, 0, 1), rgba(255, 231, 0, 0));
+        height: auto;
+        margin-top: 60px;
+        overflow: hidden;    
+        z-index: 1;
+    }
+
+    .mobile-divider .container {
+        height: auto;
+        margin-bottom: 80px;
+        margin-top: 80px;
+        overflow: hidden;
+    }
+
+/* Fields
+-------------------------------------------------------------------------------------------- */
+
+    .mobile-fields {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .mobile-fields .container {
+        height: auto;
+        margin-bottom: 120px;
+        margin-top: 120px;
+        overflow: hidden;
+    }
+
+/* Contacts
+-------------------------------------------------------------------------------------------- */
+
+    .mobile-contact {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .mobile-contact .container {
+        height: auto;
+        margin-bottom: 120px;
+        overflow: hidden;
+    }
+
+    .sub-contact {
+        margin-top: 40px;
+    }
+
+/* Gift
+-------------------------------------------------------------------------------------------- */
+
+    .mobile-gift {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .mobile-gift .container {
+        height: auto;
+        margin-bottom: 120px;
+        overflow: hidden;
+    }
+
+    .mobile-gift img {
+        margin-top: 40px;
+        width: calc(100vw - 32px);
+    }
+
+/* Signature
+-------------------------------------------------------------------------------------------- */
+
+    .mobile-signature {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .mobile-signature .container {
+        height: auto;
+        margin-bottom: 120px;
+        overflow: hidden;
+    }
+
+    .mobile-signature h2 {
+        margin-left: calc(((100vw - 32px - 16px * 3) / 4) * 2 + 16px * 2);
+    }
+
+}

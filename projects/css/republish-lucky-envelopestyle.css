@@ -1,0 +1,77 @@
+/* Republish Fonts
+-------------------------------------------------------------------------------------------- */
+
+.finesse {
+    font-family: Finesse;
+}
+
+.danhda {
+    font-family: Danh Da;
+}
+
+.barber {
+    font-family: Barber;
+}
+
+.patriot {
+    font-family: Patriot;
+}
+
+.westgate {
+    font-family: Westgate;
+}
+
+/* Custom Row
+-------------------------------------------------------------------------------------------- */
+
+.row-republish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 10 + 24px * 9);
+}
+
+.republish-lucky-envelope-theme {
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 2 + 24px * 1);
+}
+
+.republish-lucky-envelope-theme * {
+    text-align: center;
+}
+
+.republish-lucky-envelope-theme h2 {
+    margin-top: 0px;
+}
+
+.republish-lucky-envelope-theme p {
+    margin-top: 20px;
+}
+
+/* Responsive — Tablet
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    .row-republish {
+        flex-direction: column;
+        width: inherit;
+        margin-top: 0px;
+    }
+
+    .row-republish h2 {
+        margin-top: 60px;
+    }
+
+    .republish-lucky-envelope-theme {
+        width: inherit;
+    }
+}
+
+/* Responsive — Mobile
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+    .row-republish h2 {
+        margin-top: 30px;
+    }
+}

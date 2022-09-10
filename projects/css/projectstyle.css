@@ -1,0 +1,411 @@
+/* Header
+-------------------------------------------------------------------------------------------- */
+
+header .container {
+    height: 100vh;
+    margin-right: 0px;
+}
+
+header .info {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: end;
+    margin-right: 0px;
+}
+
+.sector {
+    margin-bottom: 20px;
+    width: inherit;
+}
+
+.project-name {
+    margin-bottom: 60px;
+}
+
+.transition-top {
+    height: 120px;
+    position: absolute;
+    top: calc(100vh - 120px);
+    width: 100vw;
+}
+
+/* Thumbnails
+-------------------------------------------------------------------------------------------- */
+
+.thumbnail-vfcd {
+    background: url("../../assets/2.\ Project/1.VFCD/vedette-image.jpg");
+}
+
+.thumbnail-gigi {
+    background: url("../../assets/2.\ Project/2.Gigi/vedette-image.jpg");
+}
+
+.thumbnail-dear-diary {
+    background: url("../../assets/2.\ Project/3.Dear Diary/vedette-image.png");
+}
+
+.thumbnail-republish-type-as {
+    background: url("../../assets/2.\ Project/4.Type As/vedette-image.jpg");
+}
+
+.thumbnail-republish-lucky-envelope {
+    background: url("../../assets/2.\ Project/5.Republish Lucky Envelope/vedette-image.jpg");
+}
+
+.thumbnail-radioelectric {
+    background: url("../../assets/2.\ Project/7.Radioelectric/vedette-image.jpg");
+}
+
+.thumbnail-dalat {
+    background: url("../../assets/2.\ Project/6.Dalat/vedette-image.jpg");
+}
+
+.thumbnail-vndw {
+    background: url("../../assets/2.\ Project/8.VNDW/vedette-image.jpg");
+}
+
+.thumbnail-va-noi {
+    background: url("../../assets/2.\ Project/9.Va Noi/vedette-image.png");
+}
+
+.thumbnail {
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 6 + (24px * 6) + 60px);
+}
+
+/* Brief
+-------------------------------------------------------------------------------------------- */
+
+.brief {
+    height: auto;
+    overflow: hidden;
+}
+
+.brief .container {
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.brief .small-text {
+    margin-bottom: 10px;
+}
+
+.transition-bottom {
+    height: 120px;
+    width: 100vw;
+}
+
+/* Case Study
+-------------------------------------------------------------------------------------------- */
+
+.full-width {
+    width: 100vw;
+}
+
+.case-study {
+    height: auto;
+    overflow: hidden;
+}
+
+.case-study .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.case-study * {
+    margin-top: 120px;
+}
+
+.project-logo {
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.no-margin {
+    margin-top: 0px;
+}
+
+.row {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100vw - 120px);
+}
+
+.row-middle {
+    align-items: center;
+}
+
+/* Last Images
+-------------------------------------------------------------------------------------------- */
+
+.last-img-vfcd {
+    background-image: url("../../assets/2. Project/1.VFCD/11.jpeg");
+}
+
+.last-img-gigi {
+    background-image: url("../../assets/2. Project/2.Gigi/21.jpg");
+}
+
+.last-img-dear-diary {
+    background-image: url("../../assets/2. Project/3.Dear\ Diary/21.png");
+}
+
+.last-img-republish-type-as {
+    background-image: url("../../assets/2. Project/4.Type\ As/last-img.jpg");
+}
+
+.last-img-republish-lucky-envelope {
+    background-image: url("../../assets/2. Project/5.Republish\ Lucky\ Envelope/last-img.jpg");
+}
+
+.last-img-radioelectric {
+    background-image: url("../../assets/2. Project/7.Radioelectric/last-img.jpg");
+}
+
+.last-img-dalat {
+    background-image: url("../../assets/2. Project/6.Dalat/last-img.jpg");
+}
+
+.last-img-vndw {
+    background-image: url("../../assets/2. Project/8.VNDW/last-img.jpg");
+}
+
+.last-img-va-noi {
+    background-image: url("../../assets/2. Project/9.Va\ Noi/last-img.jpg");
+}
+
+.last-img {
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.last-transition-top {
+    height: 120px;
+    width: 100vw;
+}
+
+/* Credit
+-------------------------------------------------------------------------------------------- */
+
+.credit {
+    height: auto;
+    overflow: hidden;
+}
+
+.credit .container {
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.credit .small-text {
+    margin-bottom: 10px;
+}
+
+.last-transition-bottom {
+    margin-bottom: 360px;
+}
+
+.bottom-row {
+    margin-top: 40px;
+}
+
+/* Responsive — Vertical screens
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (orientation: portrait) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header .info {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        justify-content: end;
+        margin-left: 60px;
+        margin-right: 0px;
+        width: calc(100vw - 120px);
+    }
+
+    .sector {
+        margin-bottom: 0px;
+        width: calc(100vw - 120px);
+    }
+
+    .project-name {
+        width: calc(100vw - 120px);
+    }
+
+    .thumbnail {
+        display: none;
+    }
+}
+
+/* Responsive — Mobile
+-------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header .info {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        justify-content: end;
+        margin-left: 16px;
+        margin-right: 0px;
+        width: calc(100vw - 32px);
+    }
+
+    .sector {
+        margin-bottom: 0px;
+        width: calc(100vw - 32px);
+    }
+
+    .project-name {
+        width: calc(100vw - 32px);
+    }
+
+    .thumbnail {
+        display: none;
+    }
+
+    .brief .column-6 {
+        width: calc(100vw - 32px);
+        margin-right: 0px;
+    }
+
+    .brief .width-4 {
+        width: inherit;
+    }
+
+    .brief .column-2 {
+        margin-top: 20px;
+        margin-right: 16px;
+        width: calc((100vw - 32px - 16px * 1) / 2);
+    }
+
+    .brief .outer-column {
+        margin-right: 0px;
+    }
+
+    .case-study * {
+        margin-top: 40px;
+    }
+
+    .case-study .width-1 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-2 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-3 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-4 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-5 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-6 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-7 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-8 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-9 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-10 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-11 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .width-12 {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study .full-width {
+        width: calc(100vw - 32px);
+    }
+
+    .case-study p {
+        width: calc(100vw - 32px);
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw - 32px);
+    }
+
+    .row * {
+        width: inherit;
+    }
+
+    .credit .column-2 {
+        margin-top: 20px;
+        width: calc((100vw - 32px - 16px * 1) / 2);
+    }
+
+    .credit .column-12 {
+        margin-top: 0px;
+        width: calc(100vw - 32px);
+    }
+
+    .credit .outer-column {
+        margin-right: 0px;
+    }
+
+    .outer-column-mobile {
+        margin-right: 0px;
+    }
+}

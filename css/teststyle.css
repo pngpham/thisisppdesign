@@ -1,0 +1,365 @@
+/* RGBA Colors 
+--------------------------------------------------------------------------------------------
+Pink: rgba(255,73,176)
+Green: rgba(100,177,69)
+Red: rgba(247,40,94)
+Blue: rgba(46,85,165)
+Yellow: rgba(255,231,0)
+
+-------------------------------------------------------------------------------------------- */
+
+/* Fonts
+-------------------------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: PP Pangram Sans Rounded Regular;
+    src: url(fonts/pppangramsansrounded-medium-webfont.woff);
+}
+
+@font-face {
+    font-family: PP Pangram Sans Rounded Regular;
+    src: url(fonts/pppangramsansrounded-medium-webfont.woff2);
+}
+
+
+@font-face {
+    font-family: PP Pangram Sans Rounded Bold;
+    src: url(fonts/pppangramsansrounded-bold-webfont.woff);
+}
+
+@font-face {
+    font-family: PP Pangram Sans Rounded Bold;
+    src: url(fonts/pppangramsansrounded-bold-webfont.woff2);
+}
+
+@font-face {
+    font-family: PP Pangram Sans Rounded Compressed;
+    src: url(fonts/pppangramsansrounded-compressedextrabold-webfont.woff);
+}
+
+@font-face {
+    font-family: PP Pangram Sans Rounded Compressed;
+    src: url(fonts/pppangramsansrounded-compressedextrabold-webfont.woff2);
+}
+
+/* Styles
+-------------------------------------------------------------------------------------------- */
+
+h1 {
+    font-family: PP Pangram Sans Rounded Compressed;
+    font-size: 96px;
+    line-height: 100px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: PP Pangram Sans Rounded Compressed;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: PP Pangram Sans Rounded Compressed;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: normal;
+}
+
+p {
+    font-family: PP Pangram Sans Rounded Regular;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px;
+}
+
+.bold {
+    font-family: PP Pangram Sans Rounded Bold;
+}
+
+.small-text {
+    font-family: PP Pangram Sans Rounded Bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+.bg_offwhite {
+    background-color: #F9F7F6;
+}
+
+.bg_gradient_pink {
+    background-image: linear-gradient(to bottom, rgba(255, 73, 176, 1), rgba(255, 73, 176, 0));
+}
+
+.bg_gradient_green {
+    background-image: linear-gradient(to bottom, rgba(100, 177, 69, 1), rgba(100, 177, 69, 0));
+}
+
+.background_green {
+    background-color: green;
+}
+
+.decrease-opacity {
+    opacity: 30%;
+}
+
+/* General
+-------------------------------------------------------------------------------------------- */
+
+body {
+    background-color: #F9F7F6;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* Column
+-------------------------------------------------------------------------------------------- */
+
+.column-1 {
+    float: left;
+    margin-right: 24px;
+    width: calc((100vw - 120px - 24px * 11) / 12);
+}
+
+.column-2 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 2 + 24px);
+}
+
+.column-3 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 3 + 24px * 2);
+}
+
+.column-4 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 4 + 24px * 3);
+}
+
+.column-5 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 5 + 24px * 4);
+}
+
+.column-6 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 6 + 24px * 5);
+}
+
+.column-7 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 7 + 24px * 6);
+}
+
+.column-8 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 8 + 24px * 7);
+}
+
+.column-9 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 9 + 24px * 8);
+}
+
+.column-10 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 10 + 24px * 9);
+}
+
+.column-11 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 11 + 24px * 10);
+}
+
+.column-12 {
+    float: left;
+    margin-right: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 12 + 24px * 11);
+}
+
+.outer-column {
+    margin-right: 0px;
+}
+
+/* Navigation Bar
+-------------------------------------------------------------------------------------------- */
+
+nav {
+    height: 120px;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 99;
+}
+
+.nav-row {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    width: calc(100vw - 120px);
+}
+
+.nav-column-left {
+    float: left;
+}
+
+.nav-column-right {
+    float: right;
+    margin-top: 10px;
+}
+
+.nav-column {
+    min-width: 160px;
+    float: left;
+    margin-left: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 2 + 24px);
+}
+
+.logo {
+    width: 46px;
+}
+
+/* Main
+-------------------------------------------------------------------------------------------- */
+
+main {
+    margin: 0px;
+}
+
+.column-50 {
+    width: 50vw;
+    float: left;
+}
+
+.landing {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+.project-name {
+    /* background-color: yellow; */
+    height: 100vh;
+}
+
+.vedette-image {
+    height: 100vh;
+    background-image: url(assets/2.Project/1.VFCD/vedette-image.jpg);
+    background-size: cover;
+}
+
+.text-container {
+    width: calc(50vw - 120px);
+    position: absolute;
+    bottom: 90px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.text-container h1 {
+    margin-top: 8px;
+}
+
+.info {
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(255, 231, 0, 0), rgba(255, 231, 0, 1), rgba(255, 231, 0, 1), rgba(255, 231, 0, 1), rgba(255, 231, 0, 0));
+    position: absolute;
+    margin: 0px;
+    top: calc(100vh - 120px);
+    left: 0px;
+    z-index: 1;
+}
+
+.text-box {
+    height: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 135px;
+    margin-bottom: 135px;
+    overflow: hidden;
+}
+
+.text-box p {
+    margin-top: 18px;
+}
+
+.text-box .small-text {
+    margin-top: 0px;
+}
+
+.description {
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 5 + 24px * 4);
+}
+
+.project-logo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/2.Project/1.VFCD/project-logo.gif);
+    background-size: cover;
+    margin-top: 200px;
+}
+
+/* Footer
+-------------------------------------------------------------------------------------------- */
+
+footer {
+    background-image: linear-gradient(to top, rgba(255, 231, 0, 1), rgba(255, 231, 0, 0));
+    height: 420px;
+    left: 0px;
+    position: absolute;
+    top: 200vh;
+    width: 100vw;
+}
+
+.footer-row {
+    bottom: 0px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    position: absolute;
+    width: calc(100vw - 120px);
+}
+
+.footer-column-left {
+    float: left;
+}
+
+.footer-column-right {
+    margin-top: 30px;
+    float: right;
+}
+
+.footer-column {
+    min-width: 160px;
+    float: left;
+    margin-left: 24px;
+    width: calc(((100vw - 120px - 24px * 11) / 12) * 2 + 24px);
+}
+
+.footer-column p {
+    margin-top: 8px;
+}
+
+.disclaimer {
+    width: 312px;
+    margin-top: 8px;
+}
